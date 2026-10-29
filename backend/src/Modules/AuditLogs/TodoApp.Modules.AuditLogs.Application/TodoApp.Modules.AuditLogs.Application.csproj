@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TodoApp.Modules.AuditLogs.Domain\TodoApp.Modules.AuditLogs.Domain.csproj" />
+  </ItemGroup>
+</Project>

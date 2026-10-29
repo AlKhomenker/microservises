@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TodoApp.Modules.Todos.Domain\TodoApp.Modules.Todos.Domain.csproj" />
+  </ItemGroup>
+</Project>

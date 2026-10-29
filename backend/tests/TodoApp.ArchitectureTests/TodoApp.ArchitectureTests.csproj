@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="NetArchTest.Rules" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Modules\AuditLogs\TodoApp.Modules.AuditLogs.Api\TodoApp.Modules.AuditLogs.Api.csproj" />
+    <ProjectReference Include="..\..\src\Modules\TemporaryTodos\TodoApp.Modules.TemporaryTodos.Api\TodoApp.Modules.TemporaryTodos.Api.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Todos\TodoApp.Modules.Todos.Api\TodoApp.Modules.Todos.Api.csproj" />
+  </ItemGroup>
+</Project>

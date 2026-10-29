@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\TodoApp.Shared.Abstractions\TodoApp.Shared.Abstractions.csproj" />
+    <ProjectReference Include="..\TodoApp.Modules.AuditLogs.Application\TodoApp.Modules.AuditLogs.Application.csproj" />
+    <ProjectReference Include="..\TodoApp.Modules.AuditLogs.Infrastructure\TodoApp.Modules.AuditLogs.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
