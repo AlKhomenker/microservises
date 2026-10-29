@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\Todos\TodoApp.Modules.Todos.Api\TodoApp.Modules.Todos.Api.csproj" />
+    <ProjectReference Include="..\..\Shared\TodoApp.SharedService\TodoApp.SharedService.csproj" />
+  </ItemGroup>
+</Project>

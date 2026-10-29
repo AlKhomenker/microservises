@@ -23,7 +23,7 @@ public sealed class GetAuditLogsHandlerTests
     public async Task HandleAsync_MapsAllFieldsNewestFirst()
     {
         var older = AuditLogEntry.Create(AuditLogType.Add, "todos", Guid.NewGuid(), new DateTimeOffset(2026, 1, 1, 0, 0, 0, TimeSpan.Zero));
-        var newer = AuditLogEntry.Create(AuditLogType.Removed, "temporary-todos", Guid.NewGuid(), new DateTimeOffset(2026, 2, 1, 0, 0, 0, TimeSpan.Zero));
+        var newer = AuditLogEntry.Create(AuditLogType.Removed, "other-list", Guid.NewGuid(), new DateTimeOffset(2026, 2, 1, 0, 0, 0, TimeSpan.Zero));
         _store.Entries.AddRange([older, newer]);
 
         var result = await _handler.HandleAsync(TestContext.Current.CancellationToken);

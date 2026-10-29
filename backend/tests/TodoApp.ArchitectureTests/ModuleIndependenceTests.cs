@@ -3,14 +3,10 @@ using NetArchTest.Rules;
 using TodoApp.Modules.AuditLogs.Api;
 using TodoApp.Modules.AuditLogs.Application.GetAuditLogs;
 using TodoApp.Modules.AuditLogs.Domain;
-using TodoApp.Modules.TemporaryTodos.Api;
-using TodoApp.Modules.TemporaryTodos.Application.GetTemporaryTodos;
-using TodoApp.Modules.TemporaryTodos.Domain;
 using TodoApp.Modules.Todos.Api;
 using TodoApp.Modules.Todos.Application.GetTodos;
 using TodoApp.Modules.Todos.Domain;
 using AuditLogsInfrastructure = TodoApp.Modules.AuditLogs.Infrastructure.DependencyInjection;
-using TemporaryTodosInfrastructure = TodoApp.Modules.TemporaryTodos.Infrastructure.DependencyInjection;
 using TodosInfrastructure = TodoApp.Modules.Todos.Infrastructure.DependencyInjection;
 
 namespace TodoApp.ArchitectureTests;
@@ -29,13 +25,6 @@ public sealed class ModuleIndependenceTests
             typeof(GetTodosHandler).Assembly,
             typeof(TodosInfrastructure).Assembly,
             typeof(TodosModule).Assembly,
-        ],
-        ["TemporaryTodos"] =
-        [
-            typeof(TemporaryTodoItem).Assembly,
-            typeof(GetTemporaryTodosHandler).Assembly,
-            typeof(TemporaryTodosInfrastructure).Assembly,
-            typeof(TemporaryTodosModule).Assembly,
         ],
         ["AuditLogs"] =
         [

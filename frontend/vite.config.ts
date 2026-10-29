@@ -6,9 +6,11 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   server: {
-    // The backend runs on :5000 (see backend launchSettings.json).
+    // Each backend service has its own port (see launchSettings.json of each host).
+    // More specific paths come first.
     proxy: {
-      '/api': 'http://localhost:5000',
+      '/api/audit-logs': 'http://localhost:5001', // TodoApp.AuditLogs.Host
+      '/api': 'http://localhost:5000', // TodoApp.Todos.Host
     },
   },
   test: {

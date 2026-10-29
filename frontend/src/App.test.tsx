@@ -4,9 +4,6 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import App from './App'
 import type { Todo } from './api/todos'
 
-// The temporary todos section has its own tests and its own requests.
-vi.mock('./TemporaryTodoList', () => ({ default: () => null }))
-
 const existing: Todo = { id: '1', text: 'Existing todo', createDate: '2026-10-21T08:00:00+00:00' }
 
 function jsonResponse(body: unknown, status = 200) {

@@ -8,6 +8,6 @@
     <ProjectReference Include="..\TodoApp.Modules.AuditLogs.Application\TodoApp.Modules.AuditLogs.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <InternalsVisibleTo Include="TodoApp.Api.IntegrationTests" />
+    <InternalsVisibleTo Include="TodoApp.AuditLogs.IntegrationTests" />
   </ItemGroup>
 </Project>

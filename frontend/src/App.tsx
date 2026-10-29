@@ -1,6 +1,5 @@
 import { useEffect, useState, type FormEvent } from 'react'
 import { createTodo, deleteAllTodos, deleteTodo, getTodos, type Todo } from './api/todos'
-import TemporaryTodoList from './TemporaryTodoList'
 import './App.css'
 
 const dateFormat = new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' })
@@ -110,8 +109,6 @@ function App() {
           </ul>
         </>
       )}
-
-      <TemporaryTodoList />
     </main>
   )
 }

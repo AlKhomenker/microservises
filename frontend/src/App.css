@@ -80,32 +80,3 @@ button:disabled {
 .empty {
   color: var(--muted);
 }
-
-.add-form input[type='date'] {
-  flex: 0 0 auto;
-}
-
-.temporary-todos {
-  margin-top: 48px;
-}
-
-.todo-list .status {
-  margin-left: 8px;
-  padding: 1px 8px;
-  font-size: 0.75rem;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-}
-
-.todo-list .status-active {
-  color: var(--accent);
-}
-
-.todo-list .status-expired {
-  color: var(--muted);
-}
-
-.todo-list li.expired .text {
-  color: var(--muted);
-  text-decoration: line-through;
-}

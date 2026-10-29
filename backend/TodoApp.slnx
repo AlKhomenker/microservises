@@ -1,7 +1,8 @@
 <Solution>
   <Folder Name="/src/" />
   <Folder Name="/src/Bootstrapper/">
-    <Project Path="src/Bootstrapper/TodoApp.Api/TodoApp.Api.csproj" />
+    <Project Path="src/Bootstrapper/TodoApp.AuditLogs.Host/TodoApp.AuditLogs.Host.csproj" />
+    <Project Path="src/Bootstrapper/TodoApp.Todos.Host/TodoApp.Todos.Host.csproj" />
   </Folder>
   <Folder Name="/src/Modules/" />
   <Folder Name="/src/Modules/AuditLogs/">
@@ -9,12 +10,6 @@
     <Project Path="src/Modules/AuditLogs/TodoApp.Modules.AuditLogs.Application/TodoApp.Modules.AuditLogs.Application.csproj" />
     <Project Path="src/Modules/AuditLogs/TodoApp.Modules.AuditLogs.Domain/TodoApp.Modules.AuditLogs.Domain.csproj" />
     <Project Path="src/Modules/AuditLogs/TodoApp.Modules.AuditLogs.Infrastructure/TodoApp.Modules.AuditLogs.Infrastructure.csproj" />
-  </Folder>
-  <Folder Name="/src/Modules/TemporaryTodos/">
-    <Project Path="src/Modules/TemporaryTodos/TodoApp.Modules.TemporaryTodos.Api/TodoApp.Modules.TemporaryTodos.Api.csproj" />
-    <Project Path="src/Modules/TemporaryTodos/TodoApp.Modules.TemporaryTodos.Application/TodoApp.Modules.TemporaryTodos.Application.csproj" />
-    <Project Path="src/Modules/TemporaryTodos/TodoApp.Modules.TemporaryTodos.Domain/TodoApp.Modules.TemporaryTodos.Domain.csproj" />
-    <Project Path="src/Modules/TemporaryTodos/TodoApp.Modules.TemporaryTodos.Infrastructure/TodoApp.Modules.TemporaryTodos.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/Modules/Todos/">
     <Project Path="src/Modules/Todos/TodoApp.Modules.Todos.Api/TodoApp.Modules.Todos.Api.csproj" />
@@ -25,12 +20,13 @@
   <Folder Name="/src/Shared/">
     <Project Path="src/Shared/TodoApp.Shared.Abstractions/TodoApp.Shared.Abstractions.csproj" />
     <Project Path="src/Shared/TodoApp.Shared.Kernel/TodoApp.Shared.Kernel.csproj" />
+    <Project Path="src/Shared/TodoApp.SharedService/TodoApp.SharedService.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/TodoApp.Api.IntegrationTests/TodoApp.Api.IntegrationTests.csproj" />
     <Project Path="tests/TodoApp.ArchitectureTests/TodoApp.ArchitectureTests.csproj" />
+    <Project Path="tests/TodoApp.AuditLogs.IntegrationTests/TodoApp.AuditLogs.IntegrationTests.csproj" />
     <Project Path="tests/TodoApp.Modules.AuditLogs.UnitTests/TodoApp.Modules.AuditLogs.UnitTests.csproj" />
-    <Project Path="tests/TodoApp.Modules.TemporaryTodos.UnitTests/TodoApp.Modules.TemporaryTodos.UnitTests.csproj" />
     <Project Path="tests/TodoApp.Modules.Todos.UnitTests/TodoApp.Modules.Todos.UnitTests.csproj" />
+    <Project Path="tests/TodoApp.Todos.IntegrationTests/TodoApp.Todos.IntegrationTests.csproj" />
   </Folder>
 </Solution>
